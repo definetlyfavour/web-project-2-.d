@@ -1,0 +1,103 @@
+<!--
+Name:Favour Tella
+Course: Web developnment
+Teacher:Mrs Hoitink
+School:Pembina Trails Collegaite
+Date Last Modified:
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Document</title> <!-- Title of the document -->
+    <link rel="stylesheet" href="css/external.css"/> <!-- Link to external CSS file -->
+    <style>
+        /* Styles for images */
+        img {
+            position: absolute; /* Position the image absolutely within its containing element */
+            top: 150px; /* Distance from the top of the containing element */
+            right: 60px; /* Distance from the right of the containing element */
+            border: 15px double darkcyan; /* Double border in dark cyan color */
+        }
+    
+        /* Styles for the first figure */
+        #fig1 {
+            position: absolute; /* Position the first figure absolutely */
+            top: 130px; /* Distance from the top of the containing element */
+            right: 65px; /* Distance from the right of the containing element */
+        }
+    
+        /* Styles for the second figure */
+        #fig2 {
+            position: absolute; /* Position the second figure absolutely */
+            top: 130px; /* Distance from the top of the containing element */
+            left: 25px; /* Distance from the left of the containing element */
+        }
+    
+        /* Styles for the third figure */
+        #fig3 {
+            position: absolute; /* Position the third figure absolutely */
+            right: 550px; /* Distance from the right of the containing element */
+            top: 150px; /* Distance from the bottom of the containing element */
+            border: 15px double darkcyan; /* Double border in dark cyan color */
+        }
+    
+        /* Styles for the fourth figure */
+        #fig4 {
+            position: absolute; /* Position the fourth figure absolutely */
+            right: 550px; /* Distance from the right of the containing element */
+            top: 130px; /* Distance from the bottom of the containing element */
+        }
+        #fig5{
+            position: absolute;
+            top: 150px;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Navigation bar at the top of the page -->
+    <div style="background-color:gray; text-align: center; height: 60px;">
+        <nav>
+            <a class="nav" href="map.html">location</a>&nbsp;&nbsp;&nbsp; <!-- Link to location page -->
+            <a class="nav" href="index.html">Info Page</a>&nbsp;&nbsp; <!-- Link to info page -->
+            <a class="nav" href="main.html">Home</a> <!-- Link to home page -->
+        </nav>
+        <h4>Welcome To Knowledge</h4> <!-- Welcome message -->
+    </div>
+    
+    <header>
+        <h3 style="text-align: center;"><b>Map Of The Treaty Area</b></h3> <!-- Main header for the map section -->
+    </header>
+    
+    <main>
+        <figure>
+            <!-- Embedded Google Map showing the Treaty area -->
+            <iframe id="fig5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.
+            7209647068144!2d-97.17990842359723!3d49.88526647148971!2m3!1f0!2f0!3f0!3m2!
+            1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea73d0008401c7%3A0x8f45bb109e6dbf15!2sTreaty%
+            20One%20Nations!5e0!3m2!1sen!2sca!4v1729181030275!5m2!1sen!2sca" 
+            width="400"  height="315" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            style=" border: 15px double darkcyan;">
+            </iframe>
+            <figcaption id="fig2"><b>The Map of the Treaty One</b></figcaption> <!-- Caption for the map -->
+        </figure>
+        
+        <figure>
+            <!-- Image of the Canadian Treaties Map -->
+            <img src="images/Canadian Treaties Map.jpg" height="315" width="400" alt="Canadian Treaties Map">
+            <figcaption id="fig1"><b>The map in colored chunks showing they are located</b></figcaption> <!-- Caption for the image -->
+        </figure>
+        
+        <figure>
+            <!-- Embedded YouTube video explaining Treaty One -->
+            <iframe id="fig3" width="460" height="315" src="https://www.youtube.com/embed/8O717cPRcf4?si=ol8YeECuBxQZ87XL?autoplay=1&mute=1" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" alt="where Treaty one negotiations occured " allowfullscreen>
+            </iframe>
+            <figcaption id="fig4"><b>Treaty one location more detailed in the below YouTube video</b></figcaption> <!-- Caption for the video -->
+        </figure>
+    </main>
+</body>
+</html>

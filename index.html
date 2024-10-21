@@ -1,0 +1,123 @@
+<!--
+Name:Favour Tella
+Course: Web developnment
+Teacher:Mrs Hoitink
+School:Pembina Trails Collegaite
+Date Last Modified:
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Numbered Treaty</title> <!-- Title of the document -->
+    <link rel="stylesheet" href="css/external.css"/> <!-- Link to external CSS file -->
+    <style>
+        /* Inline CSS for specific styling */
+        h3 {
+            text-align: center; /* Center-aligns the header */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font family for the header */
+        }
+        p {
+            color: black; /* Text color for paragraphs */
+        }
+        img {
+            float: left; /* Floats the image to the left */
+            border: 40px; /* This property should specify border-style, width, and color */
+        }
+        .aside {
+            position: absolute; /* Positions the aside element absolutely */
+            bottom: 100px; ; /* Vertical position from the top */
+        }
+        .new-aside {
+            position: absolute; /* Positions the new-aside element absolutely */
+            bottom: 200px; /* Vertical position from the top */
+        }
+        span{
+            color: darkcyan;/*This is for styling my inline element(treaty)*/
+        }
+        #headfour{
+            text-align: center;/* this is my id to style my main header at the top*/
+            position: absolute;
+            top: 30px;
+            right: 680px;
+        }
+        h5{
+            /* this is to style my footer text, below my page*/
+            color:black;
+            position: absolute;
+            bottom: 10px;
+            right: 650px;
+        }
+        #headerfive{
+            /* this is to style the text in my footer*/
+            background-color: gray;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar at the top of the page -->
+    <div style="background-color:gray; text-align: center; height: 60px;">
+        <nav>
+            <a class="nav" href="map.html">location</a>&nbsp;&nbsp;&nbsp; <!-- Link to location page -->
+            <a class="nav" href="index.html">Info Page</a>&nbsp;&nbsp; <!-- Link to information page -->
+            <a class="nav" href="main.html">Home</a><!--link to the home page-->
+        </nav>
+            <div class="search">
+                <form method="get">
+                    <input type="text" placeholder="search...">
+                    <button type="submit">GO</button>
+                </form>
+            </div>
+        <h4 id="headfour">Welcome to Knowledge</h4> <!-- Welcome message -->
+    </div>
+    
+    <header>
+        <h2><u>The First <span>Treaty</span> In Manitoba</u></h2><br> <!-- Main header for the treaty -->
+    </header>
+    
+    <main>
+        <p><b><span>Treaty</span>1 the first of the numbered treaties, was signed at lower fort Garry in Manitoba 
+            Honoring the <span>treaty</span> relationship, based on the declaration of right and respect. 
+            it is important to work together to advance reconciliation with indigenous peoples. 
+            Indigenous people have lived on the land we now call Canada thousands of years,
+            with their own unique cultures, traditions and languages.</b></p><br><br> <!-- Main content paragraph -->
+    </main>
+    
+    <h2><u>Signing Of <span>Treaty</span> One</u></h2> <!-- Subheader for signing details -->
+    
+    <figure>
+        <img style="border: 5px double darkcyan ;" src="images/treaty.jpg" alt="the picture of when the treaty was negotiated"
+        width="500" height="300"> <!-- Image of the treaty -->
+        <figcaption><!--caption of where the treaty was negotiated-->
+            <b>Creator has gifted First Nations people with essential dominion including laws,
+            teachings, ways of knowing and being the people that guides our decisions in the best interests of our peoples,
+            lands, and relatives. Our people, gathered in assemblies, elect and appoint their government representatives. 
+            The <span>Treaty</span> One Nation is guided by the traditional lessons of truth, love, honesty, respect, humility, generosity,
+            and wisdom. <br><br>
+            <span>Treaty</span> One Nations leadership form the council that guides the governing system, including the development of <span>Treaty</span> 
+            One lands across Southern Manitoba.<br><br>
+            <span>Treaty</span> One Nation is composed of the seven First Nations who are signatories to the first of the numbered <span>Treaties</span>,
+            originally signed on August 3, 1871 at Lower Fort Garry after several days of discussions and ceremonies.<br><br>
+            <span>Treaty</span> One Nation is composed of the seven First Nations who are signatories to the first of the numbered <span>Treaties</span>, 
+            originally signed on August 3, 1871 at Lower Fort Garry after several days of discussions and ceremonies.
+            </b><br>
+        </figcaption> <!-- Caption for the treaty image -->
+    </figure>
+    
+    <aside>
+        <p class="aside"><b> <span>Treaty</span> 1 was signed by government agents Lieutenant-Governor Adams G. Archibald, Commissioner Simpson, Major A.G. Irvine,
+            and eight witnesses. The signatories for the Anishinaabe and the Swampy Cree were: Red Eagle (Mis-koo-ke-new, or Henry Prince);
+            Bird Forever (Ka-ke-ka-penais, or William Pennefather); Flying Down Bird (Na-sha-ke-penais); Centre of Bird's Tail (Na-na-wa-nanan); 
+            Flying Round (Ke-we-tay-ash); Whip-poor-will (Wa-ko-wush); and Yellow Quill (Os-za-we-kwun).</b></p> <!-- Information about the signatories -->
+        <p class="new-aside"><b>The location for <span>Treaty</span> 1, the negotiations for <span>Treaty</span>  1 did not start until 27 July 1871, after approximately 1,000 Indigenous participants,
+            including men, women, and children, had formed a dignified camp of roughly 100 tents in a semi-circle around Fort Garry.
+            James McKay, a Métis member of Manitoba's Executive Council, was preserved as interpreter.</b></p> <!-- Additional information about the treaty negotiations -->
+    </aside>
+    <footer><!--This include my copyright information at the bottom of my page-->
+        <h5 id="headerfive"><u>&copy;Treaty Network.Information Center</u></h5>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    padding: 0; /* Reset padding for all elements */
+    margin: 0; /* Reset margin for all elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Times New Roman', Times, serif; /* Set default font family */
+}
+
+body {
+    background-color: beige; /* Set the background color for the body */
+}
+
+a:hover {
+    background-color: darkcyan; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+    font-size: large; /* Increase font size on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.nav {
+    color: aliceblue; /* Text color for navigation links */
+    size: 40; /* This property does not affect text size */
+}
+
+h2 {
+    color: black; /* Text color for h2 headings */
+    text-align: center; /* Center-align h2 headings */
+}
+
+h4:hover {
+    background-color: aliceblue; /* Change background color on hover for h4 */
+    cursor: alias; /* Change cursor to alias on hover */
+}
+
+.container {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background-repeat: no-repeat;
+}
+
+.content {
+    text-align: center; /* Center-align text within the content */
+}
+
+.content h1 {
+    font-size: 95px; /* Font size for main heading */
+    color: #fff; /* White color for main heading */
+    margin-bottom: 50px; /* Space below the main heading */
+}
+
+.content a {
+    font-size: 23px; /* Font size for links */
+    color: #fff; /* White color for links */
+    text-decoration: none; /* Remove underline from links */
+    border: 2px solid #fff; /* White border for links */
+    padding: 15px 25px; /* Padding for links */
+    border-radius: 50px; /* Rounded corners for links */
+    transition: 0.3s; /* Smooth transition for hover effects */
+}
+
+.content a:hover {
+    background-color: beige; /* Background color change on hover */
+    color: #000; /* Change text color to black on hover */
+}
+
+.background-clip {
+    position: absolute; /* Positioning for background clip */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    z-index: -1; /* Send background clip behind other elements */
+}
+.search{
+    /*this is for the search bar diaplay and margin*/
+    display: flex;
+    margin-right: 0;
+}
+.search form{
+    
+    display: flex;
+    margin: 0;
+}
+.search input{
+    /*this is for the input attributes*/
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.search input:hover{
+    /*this is for the input attributes settings when you hover on it */
+    border: 1px solid #72a0d4;
+}
+.search button{
+    /*this shows the type of cursoer you using*/
+    cursor: pointer;
+}
+
+/* Media query for aspect ratios 16:9 and wider */
+@media (min-aspect-ratio: 16/9) {
+    .background-clip {
+        width: 100%; /* Full width for wider aspect ratios */
+        height: auto; /* Automatic height to maintain aspect ratio */
+    }
+}
+
+/* Media query for any minimum aspect ratio */
+@media (min-aspect-ratio) {
+    .background-clip {
+        width: auto; /* Automatic width to maintain aspect ratio */
+        height: 100%; /* Full height for taller aspect ratios */
+    }
+}
