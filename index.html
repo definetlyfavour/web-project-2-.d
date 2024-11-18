@@ -16,81 +16,182 @@ Date Last Modified:
         /* Inline CSS for specific styling */
         h3 {
             text-align: center; /* Center-aligns the header */
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Font family for the header */
-        }
-        p {
-            color: black; /* Text color for paragraphs */
         }
         img {
-            float: left; /* Floats the image to the left */
+            float: right;/* Floats the image to the left */
             border: 40px; /* This property should specify border-style, width, and color */
+            padding: 20px;
         }
         .aside {
             position: absolute; /* Positions the aside element absolutely */
-            bottom: 100px; ; /* Vertical position from the top */
+            bottom: -400px; ; /* Vertical position from the top */
         }
         .new-aside {
             position: absolute; /* Positions the new-aside element absolutely */
-            bottom: 200px; /* Vertical position from the top */
+            bottom: -300px; /* Vertical position from the top */
+        } 
+        #Aside_third{
+            position: absolute;
+            bottom: -500px;
+        }
+        #Aside_fourth{
+            position: absolute;
+            bottom: -580px;
+        }
+        #research_last{
+            position: absolute;/*This styles the my last research link down below*/
+            bottom: -620px;
+            left: 0.5px;
+            font-size: 1.8rem;
+            padding: 15px;
         }
         span{
-            color: darkcyan;/*This is for styling my inline element(treaty)*/
+            color:#ffb703;/*This is for styling my inline element(treaty)*/
+            font-size: 1.6rem;
         }
         #headfour{
             text-align: center;/* this is my id to style my main header at the top*/
             position: absolute;
-            top: 30px;
-            right: 680px;
+            font-size: 3.3rem;
+            top: 55px;
+            right: 580px;
         }
         h5{
             /* this is to style my footer text, below my page*/
-            color:black;
+            color:white;
             position: absolute;
             bottom: 10px;
-            right: 650px;
+            right: 600px;
         }
         #headerfive{
             /* this is to style the text in my footer*/
-            background-color: gray;
             height: 20px;
+            position: absolute;
+            bottom: -650px;
+            left: 680px;
+            font-size: 1.6rem;
+            
+        }
+        /* General styles for the div element */
+        div {
+        background-color: #022336; /* Sets a dark blue background color */
+        height: 130px; /* Sets the height of the div */
+        /*border: 2px double black;*/ /* Border is commented out, could be used for a double black border */
+    }
+
+        /* Styles for the h2 element with id #h2 */
+        #h2 {
+        position: absolute; /* Positions the h2 element absolutely */
+        top: 120px; /* Sets the distance from the top of the container */
+        right: 620px; /* Sets the distance from the right edge of the container */
+        font-size: 2.3rem; /* Sets the font size to 2.3 rem */
+        }
+
+        /* Styles for the second h2 element with id #h2_2 */
+        #h2_2 {
+        position: absolute; /* Positions the h2 element absolutely */
+        bottom: 450px; /* Sets the distance from the bottom of the container */
+        right: 670px; /* Sets the distance from the right edge of the container */
+        font-size: 2.3rem; /* Sets the font size to 2.3 rem */
+        }
+
+        /* Styles for the paragraph element with id #paragrapgh */
+        #paragrapgh {
+        position: absolute; /* Positions the paragraph element absolutely */
+        bottom: -30px; /* Moves the paragraph slightly below its container */
+        right: 500px; /* Sets the distance from the right edge of the container */
+        }
+
+        /* Styles for the container with id #Main */
+        #Main {
+        height: auto; /* The height will adjust automatically based on the content */
+        }
+
+        /* Styles for the first image with id #img_new */
+        #img_new {
+        position: absolute; /* Positions the image absolutely */
+        bottom: -200px; /* Moves the image 200px below its container */
+        padding: 20px; /* Adds 20px padding around the image */
+        }
+
+        /* General styles for all paragraph elements */
+        p {
+        margin: 15px; /* Adds 15px margin around each paragraph */
+        }
+
+        /* Styles for the second image with id #img_new2 */
+        #img_new2 {
+        position: absolute; /* Positions the image absolutely */
+        bottom: -200px; /* Moves the image 200px below its container */
+        right: 650px; /* Sets the distance from the right edge of the container */
+        padding: 20px; /* Adds 20px padding around the image */
+        }
+
+        /* Styles for the third image with id #img_new3 */
+        #img_new3 {
+        position: absolute; /* Positions the image absolutely */
+        bottom: -200px; /* Moves the image 200px below its container */
+        right: 80px; /* Sets the distance from the right edge of the container */
+        padding: 20px; /* Adds 20px padding around the image */
+        }
+
+        /* General styles for anchor (link) elements */
+        a {
+        color: white; /* Changes the link color to white */
+        }
+
+        /* Styles for the anchor element with id #a_research */
+        #a_research {
+        position: absolute; /* Positions the anchor element absolutely */
+        bottom: 440px; /* Sets the distance from the bottom of the container */
+        font-size: 1.8rem; /* Sets the font size to 1.8 rem */
+        margin: 15px; /* Adds 15px margin around the anchor */
+        }
+
+        /* Styles for the paragraph element with id #p */
+        #p {
+        position: absolute; /* Positions the paragraph element absolutely */
+        top: 160px; /* Sets the distance from the top of the container */
         }
     </style>
 </head>
 <body>
     <!-- Navigation bar at the top of the page -->
-    <div style="background-color:gray; text-align: center; height: 60px;">
-        <nav>
+    <div >
+        <nav class="divnew"> 
             <a class="nav" href="map.html">location</a>&nbsp;&nbsp;&nbsp; <!-- Link to location page -->
             <a class="nav" href="index.html">Info Page</a>&nbsp;&nbsp; <!-- Link to information page -->
             <a class="nav" href="main.html">Home</a><!--link to the home page-->
         </nav>
-            <div class="search">
+            <div class="search" style="height: 40px;" >
                 <form method="get">
                     <input type="text" placeholder="search...">
                     <button type="submit">GO</button>
                 </form>
             </div>
-        <h4 id="headfour">Welcome to Knowledge</h4> <!-- Welcome message -->
+        <h4 id="headfour">Welcome to Treaty One</h4> <!-- Welcome message -->
     </div>
-    
+    <div>
     <header>
-        <h2><u>The First <span>Treaty</span> In Manitoba</u></h2><br> <!-- Main header for the treaty -->
+        <h2 id="h2">The First <span>Treaty</span> In Manitoba</h2><br> <!-- Main header for the treaty -->
     </header>
-    
     <main>
-        <p><b><span>Treaty</span>1 the first of the numbered treaties, was signed at lower fort Garry in Manitoba 
+        <p id="p"><b><span>Treaty</span>1 the first of the numbered treaties, was signed at lower fort Garry in Manitoba 
             Honoring the <span>treaty</span> relationship, based on the declaration of right and respect. 
             it is important to work together to advance reconciliation with indigenous peoples. 
             Indigenous people have lived on the land we now call Canada thousands of years,
-            with their own unique cultures, traditions and languages.</b></p><br><br> <!-- Main content paragraph -->
-    </main>
-    
-    <h2><u>Signing Of <span>Treaty</span> One</u></h2> <!-- Subheader for signing details -->
-    
-    <figure>
-        <img style="border: 5px double darkcyan ;" src="images/treaty.jpg" alt="the picture of when the treaty was negotiated"
+            with their own unique cultures, traditions and languages.
+            </b></p> <!-- Main content paragraph -->
+            <a id="a_research" href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-
+            anniversary-of-treaty-no-1.html">Research for where the treaty was signed</a>
+        <h2 id="h2_2">Signing Of <span>Treaty</span> One</h2> <!-- Subheader for signing details -->
+    </div>
+        <figure>
+        <img src="images/treaty.jpg" alt="the picture of when the treaty was negotiated"
         width="500" height="300"> <!-- Image of the treaty -->
-        <figcaption><!--caption of where the treaty was negotiated-->
+    </figure>
+    <div id="Main">
+        <p id="paragrapgh">
             <b>Creator has gifted First Nations people with essential dominion including laws,
             teachings, ways of knowing and being the people that guides our decisions in the best interests of our peoples,
             lands, and relatives. Our people, gathered in assemblies, elect and appoint their government representatives. 
@@ -103,21 +204,32 @@ Date Last Modified:
             <span>Treaty</span> One Nation is composed of the seven First Nations who are signatories to the first of the numbered <span>Treaties</span>, 
             originally signed on August 3, 1871 at Lower Fort Garry after several days of discussions and ceremonies.
             </b><br>
-        </figcaption> <!-- Caption for the treaty image -->
-    </figure>
-    
+            <a href="https://treaty1.ca/treaty-no-1/">My research for treaty one </a>
+        </p>
+    </main>
     <aside>
+        <img id="img_new" src="images/Treaty one new.jfif" height="200" width="300"/>
+        <img id="img_new2" src="images/treaty one new2.jfif" height="200" width="350"/>
+        <img id="img_new3" src="images/treaty one new3.jfif" height="200" width="350"/>
+        <p class="new-aside"><b>The location for <span>Treaty</span> 1, the negotiations for <span>Treaty</span>  1 did not start until 27 July 1871, after approximately 1,000 Indigenous participants,
+            including men, women, and children, had formed a dignified camp of roughly 100 tents in a semi-circle around Fort Garry.
+            James McKay, a Métis member of Manitoba's Executive Council, was preserved as interpreter.</b></p> <!-- Additional information about the treaty negotiations -->
         <p class="aside"><b> <span>Treaty</span> 1 was signed by government agents Lieutenant-Governor Adams G. Archibald, Commissioner Simpson, Major A.G. Irvine,
             and eight witnesses. The signatories for the Anishinaabe and the Swampy Cree were: Red Eagle (Mis-koo-ke-new, or Henry Prince);
             Bird Forever (Ka-ke-ka-penais, or William Pennefather); Flying Down Bird (Na-sha-ke-penais); Centre of Bird's Tail (Na-na-wa-nanan); 
             Flying Round (Ke-we-tay-ash); Whip-poor-will (Wa-ko-wush); and Yellow Quill (Os-za-we-kwun).</b></p> <!-- Information about the signatories -->
-        <p class="new-aside"><b>The location for <span>Treaty</span> 1, the negotiations for <span>Treaty</span>  1 did not start until 27 July 1871, after approximately 1,000 Indigenous participants,
-            including men, women, and children, had formed a dignified camp of roughly 100 tents in a semi-circle around Fort Garry.
-            James McKay, a Métis member of Manitoba's Executive Council, was preserved as interpreter.</b></p> <!-- Additional information about the treaty negotiations -->
+            <a id="research_last" href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2">This is the research for the parties involved during the signing of the treaty one </a>
+        <p id="Aside_third"><b><span>Treaty</span> No. 1 was the first <span>treaty</span> that helped establish Western Canada, and was made with the understanding that the <span>Treaty</span> would be in place for 
+            “as long as the sun shines, the grass grows and the river flows”. Indigenous peoples have lived on the land we now call Canada for thousands of years, with their own unique cultures,
+            identities, traditions,languages and institutions.</b></p>
+        <p id="Aside_fourth"><b> Collaborative partnerships between <span>Treaty</span> One First Nations and both provincial and federal 
+            governments have been increasingly focused on enhancing infrastructure development, such as housing, transportation,
+            and healthcare services.</b></p>
+
     </aside>
     <footer><!--This include my copyright information at the bottom of my page-->
         <h5 id="headerfive"><u>&copy;Treaty Network.Information Center</u></h5>
-        
     </footer>
+</div>
 </body>
 </html>

@@ -1,36 +1,50 @@
+/*
+I decided to use the analogous color family
+Because my content is meaningful and connect deeply to a lot of people
+I believe this color relates well to the treaty because
+firstly it is related to the river, the sky and the plants.
+The color orange is related to the treaty one flag and symbolizes their culture
+and enhance the spiritual ascept of it.
+*/
 * {
     padding: 0; /* Reset padding for all elements */
     margin: 0; /* Reset margin for all elements */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
-    font-family: 'Times New Roman', Times, serif; /* Set default font family */
+    font-family: gilroy,sans-serif; /* Set default font family */
+    font-size: 62.5%;
+    line-height: 140%;
 }
 
 body {
-    background-color: beige; /* Set the background color for the body */
+    background-color:#022336; /* Set the background color for the body */
 }
 
 a:hover {
-    background-color: darkcyan; /* Change background color on hover */
-    color: black; /* Change text color on hover */
-    font-size: large; /* Increase font size on hover */
+    background-color: #022336; /* Change background color on hover */
+    color:white; /* Change text color on hover */
+    font-size: medium; /* Increase font size on hover */
     cursor: pointer; /* Change cursor to pointer on hover */
 }
-
+p {
+    color: white; /* Text color for paragraphs */
+    word-spacing: 5px;
+    font-style:normal;
+    text-decoration: solid;
+    font-size: 2.7rem;
+    line-height: 100%;
+}
 .nav {
-    color: aliceblue; /* Text color for navigation links */
+    color: white; /* Text color for navigation links */
     size: 40; /* This property does not affect text size */
+    border: 2px solid #fff;
+    border-radius: 140px;
+    padding: 10px 50px;
 }
 
 h2 {
-    color: black; /* Text color for h2 headings */
+    color: white; /* Text color for h2 headings */
     text-align: center; /* Center-align h2 headings */
 }
-
-h4:hover {
-    background-color: aliceblue; /* Change background color on hover for h4 */
-    cursor: alias; /* Change cursor to alias on hover */
-}
-
 .container {
     width: 100%; /* Full width of the container */
     height: 100%; /* Full height of the container */
@@ -49,6 +63,13 @@ h4:hover {
     font-size: 95px; /* Font size for main heading */
     color: #fff; /* White color for main heading */
     margin-bottom: 50px; /* Space below the main heading */
+}
+.divnew{
+    background-color: #8ecae6;
+    font-size: 2.7rem;
+    text-align: center;
+    height: 100px;
+    border:none;
 }
 
 .content a {

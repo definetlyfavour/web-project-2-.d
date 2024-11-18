@@ -16,55 +16,81 @@ Date Last Modified:
         /* Styles for images */
         img {
             position: absolute; /* Position the image absolutely within its containing element */
-            top: 150px; /* Distance from the top of the containing element */
+            top: 220px; /* Distance from the top of the containing element */
             right: 60px; /* Distance from the right of the containing element */
-            border: 15px double darkcyan; /* Double border in dark cyan color */
+            border: 15px double #003366; /* Double border in dark cyan color */
         }
     
         /* Styles for the first figure */
         #fig1 {
             position: absolute; /* Position the first figure absolutely */
-            top: 130px; /* Distance from the top of the containing element */
+            top: 180px; /* Distance from the top of the containing element */
             right: 65px; /* Distance from the right of the containing element */
+            color: white;
         }
     
         /* Styles for the second figure */
         #fig2 {
             position: absolute; /* Position the second figure absolutely */
-            top: 130px; /* Distance from the top of the containing element */
+            top: 180px; /* Distance from the top of the containing element */
             left: 25px; /* Distance from the left of the containing element */
+            color: white;
         }
     
         /* Styles for the third figure */
         #fig3 {
             position: absolute; /* Position the third figure absolutely */
             right: 550px; /* Distance from the right of the containing element */
-            top: 150px; /* Distance from the bottom of the containing element */
-            border: 15px double darkcyan; /* Double border in dark cyan color */
+            top: 220px; /* Distance from the bottom of the containing element */
+            border: 15px double #003366; /* Double border in #003366 color */
+            color: white;
         }
     
         /* Styles for the fourth figure */
         #fig4 {
             position: absolute; /* Position the fourth figure absolutely */
             right: 550px; /* Distance from the right of the containing element */
-            top: 130px; /* Distance from the bottom of the containing element */
+            top: 180px; /* Distance from the bottom of the containing element */
+            color: white;
         }
         #fig5{
             position: absolute;
-            top: 150px;
+            top: 220px;
+            border: 15px double #003366;
+            color: white;
+        }
+        h3{
+            color: white;
+            position: absolute;
+            top: 100px;
+            right: 650px;
+            font-size:3.4rem;
+        }
+        #headfour{
+            text-align: center;/* this is my id to style my main header at the top*/
+            position: absolute;
+            font-size: 3.3rem;
+            top: 55px;
+            right: 580px;
+        }
+        a{
+        color: white;
+        }
+        .nav_2{
+            font-size: 3.5rem;
         }
     </style>
     
 </head>
 <body>
     <!-- Navigation bar at the top of the page -->
-    <div style="background-color:gray; text-align: center; height: 60px;">
-        <nav>
+    <div>
+        <nav class="divnew">
             <a class="nav" href="map.html">location</a>&nbsp;&nbsp;&nbsp; <!-- Link to location page -->
             <a class="nav" href="index.html">Info Page</a>&nbsp;&nbsp; <!-- Link to info page -->
             <a class="nav" href="main.html">Home</a> <!-- Link to home page -->
         </nav>
-        <h4>Welcome To Knowledge</h4> <!-- Welcome message -->
+        <h4 id="headfour">Welcome To Treaty One </h4> <!-- Welcome message -->
     </div>
     
     <header>
@@ -79,15 +105,14 @@ Date Last Modified:
             1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea73d0008401c7%3A0x8f45bb109e6dbf15!2sTreaty%
             20One%20Nations!5e0!3m2!1sen!2sca!4v1729181030275!5m2!1sen!2sca" 
             width="400"  height="315" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
-            style=" border: 15px double darkcyan;">
+        >
             </iframe>
-            <figcaption id="fig2"><b>The Map of the Treaty One</b></figcaption> <!-- Caption for the map -->
+            <figcaption class="nav_2" id="fig2"><b><u>The Map of the Treaty One</u></b></figcaption> <!-- Caption for the map -->
         </figure>
-        
         <figure>
             <!-- Image of the Canadian Treaties Map -->
             <img src="images/Canadian Treaties Map.jpg" height="315" width="400" alt="Canadian Treaties Map">
-            <figcaption id="fig1"><b>The map in colored chunks showing they are located</b></figcaption> <!-- Caption for the image -->
+            <figcaption class="nav_2" id="fig1"><b><u>The map in colored chunks showing they are located</u></b></figcaption> <!-- Caption for the image -->
         </figure>
         
         <figure>
@@ -96,7 +121,7 @@ Date Last Modified:
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" alt="where Treaty one negotiations occured " allowfullscreen>
             </iframe>
-            <figcaption id="fig4"><b>Treaty one location more detailed in the below YouTube video</b></figcaption> <!-- Caption for the video -->
+            <figcaption id="fig4" class="nav_2"><b><a href="https://youtu.be/8O717cPRcf4?si=ZxF7gSwjW5p2KAp9">Link to Youtube video including the Treaty one information</a></b></figcaption> <!-- Caption for the video -->
         </figure>
     </main>
 </body>
